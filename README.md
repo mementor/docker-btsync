@@ -27,7 +27,7 @@ You need to edit btsync.conf (at least login/pass) and copy to destination dir:
 Now, just run docker:
 ```
   docker build -t btsync .
-  docker run -i -p 8080:8080 -p 6880:6880 -v /dvol/btsync/:/btsync/ btsync
+  docker run -d -p 8080:8080 -p 6880:6880 -v /dvol/btsync/:/btsync/ btsync
 ```
 
 Thats it!
