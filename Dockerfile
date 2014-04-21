@@ -8,7 +8,7 @@ RUN curl -o /usr/bin/btsync.tar.gz http://download-lb.utorrent.com/endpoint/btsy
 RUN cd /usr/bin && tar -zxvf btsync.tar.gz && rm btsync.tar.gz
 
 EXPOSE 8080
-EXPOSE 123
+EXPOSE 6880 
 
 CMD ["--config", "/btsync/btsync.conf", "--nodaemon"]
 ENTRYPOINT ["btsync"]
